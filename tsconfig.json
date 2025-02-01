@@ -1,0 +1,24 @@
+{
+    "compilerOptions": {
+      "target": "ES6",             // ES6 output (supports let/const/arrow functions, etc.)
+      "module": "ESNext",          // ES module system for import/export syntax
+      "moduleResolution": "node",  // Module resolution (helps in resolving imports correctly)
+      "outDir": "./dist",          // Output directory for compiled JavaScript
+      "strict": true,              // Enable strict type-checking options
+      "esModuleInterop": true,     // Ensures compatibility with CommonJS modules
+      "skipLibCheck": true,        // Skip type-checking of declaration files for faster build
+      "resolveJsonModule": true,   // Allows importing .json files
+      "allowJs": true,             // Allow JavaScript files to be compiled too
+      "sourceMap": true,           // Generate source maps for debugging
+      "lib": ["dom", "es6", "ES2021.String"],       // Include browser (DOM) and ES6 libraries
+      "jsx": "react",              // JSX support for React (if applicable)
+      "strictNullChecks": false,    // Disable strict null checks (can be enabled if required)
+    },
+    "include": [
+      "src/**/*"                   // Include all TypeScript files in the src directory
+, "src/lib/.js"    ],
+    "exclude": [
+      "node_modules"               // Exclude node_modules from compilation
+    ]
+  }
+  
